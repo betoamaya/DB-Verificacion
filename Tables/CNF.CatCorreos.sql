@@ -1,0 +1,8 @@
+CREATE TABLE [CNF].[CatCorreos]
+(
+[Tipo] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[CuerpoHTML] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [CNF].[CatCorreos] ADD CONSTRAINT [PK_CatCorreos] PRIMARY KEY CLUSTERED  ([Tipo]) ON [PRIMARY]
+GO
